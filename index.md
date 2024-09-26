@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "My Awesome"
   text: "Portfolio"
-  tagline: 'Creativity and Strategy'
+  tagline: 'Strategy and Creativity'
   image:
     src: 'https://adittba.github.io/assets/memoji.png' 
   actions:
