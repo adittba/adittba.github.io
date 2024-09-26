@@ -325,8 +325,9 @@ const toggleFullScreen = () => {
 
 Additionally, my FreeCodeCamp certification has given me basic coding knowledge, so I can better understand and work with technical teams. These certifications help me connect the dots between marketing, design, coding, and project management.
 
-<!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container">

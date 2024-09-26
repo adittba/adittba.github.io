@@ -13,8 +13,9 @@ TGV is a brand run by a passionate dietitian who creates colorful and eye-catchi
 ## CRM Management
 I created and organized a comprehensive CRM system from scratch using GoHighLevel. This system allowed TGV to efficiently manage her growing follower base by keeping track of new followers and their interactions. I set up features that enabled easy communication and follow-up with clients, ensuring that no leads were overlooked.
 
-<!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container">
@@ -62,8 +63,6 @@ I took charge of managing emails from TGV’s new followers, ensuring timely and
 ## Funnel Development
  I developed a client funnel that included personalized quizzes tailored to the needs of potential clients. This funnel was designed to guide users through a journey that not only provided valuable insights into their dietary needs but also positioned TGV as a knowledgeable resource. The quizzes engaged users and collected important information that helped tailor follow-up communications and services to individual preferences.
 
- <!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container">

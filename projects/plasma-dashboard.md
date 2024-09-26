@@ -35,6 +35,10 @@ The Plasma Dashboard is a data-visualization tool, built with Python, that allow
 <h4 class="table-title"> Pie Chart & Donut Chart </h4>
 <p> The <strong>Pie Chart</strong> and <strong>Donut Chart </strong> display proportional data or parts of a whole, making it ideal for categorical data breakdowns, such as product categories or regions. Its functionality includes hover-over labels that show both percentages and values, allowing users to quickly interpret the data. </p>
 
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
+
 <!-- Main Carousel -->
 <div :class="['carousel-wrapper', { hidden: isFullScreen }]">
   <span class="arrow left-arrow" @click="changeImage(-1)">&#10094;</span>
@@ -317,7 +321,7 @@ const toggleFullScreen = () => {
 <h4 class="table-title"> Scatter Plot </h4>
 <p> The <strong>Scatter Plot</strong> shows relationships between two continuous variables, helping users identify correlations or clusters within the data, such as sales versus profits. Its functionality includes adjustable axes, and each point can be color-coded based on additional variables like region or product category, enhancing data interpretation. </p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+
 <div class="image-container">
   <img src="/assets/plasma-scatter-plot.png" class="styled-image" alt="Descriptive text">
 </div>
@@ -325,7 +329,7 @@ const toggleFullScreen = () => {
 <h4 class="table-title"> Bar Chart </h4>
 <p> The <strong>Bar Chart</strong>  is used for comparing quantities across categories, making it ideal for showing sales figures across different product lines or regions. Its functionality allows users to click on bars to isolate data for deeper analysis, and it also supports sorting by various categories, enhancing the user's ability to explore the data.</p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+
 <div class="image-container">
   <img src="/assets/plasma-bar-chart.png" class="styled-image" alt="Descriptive text">
 </div>
@@ -333,7 +337,7 @@ const toggleFullScreen = () => {
 <h4 class="table-title"> 3D View </h4>
 <p> The <strong>3D Views</strong> visualize more complex, multi-dimensional datasets, providing insight into data distributions and patterns across three variables. Their functionality includes rotatable and zoomable views, enabling users to explore data from multiple perspectives, which enhances overall analysis.</p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+
 <div class="image-container" style="max-height: 500px; overflow: hidden;">
   <img src="/assets/plasma-3d.png" class="styled-image" alt="Descriptive text" style="max-height: 350px; width: auto; object-fit: contain;">
 </div>
@@ -341,7 +345,7 @@ const toggleFullScreen = () => {
 <h4 class="table-title"> Tree Map </h4>
 <p> The <strong>Tree Map</strong>  displays data points at successive intervals, making it ideal for visualizing trends over time, such as sales performance or website traffic. Its functionality includes adjustable time ranges and the ability to zoom in on specific periods, allowing users to identify patterns and anomalies in the data more effectively. </p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+
 <div class="image-container">
   <img src="/assets/plasma-tree-map.png" class="styled-image" alt="Descriptive text" style="max-height: 450px; width: auto; object-fit: contain;">
 </div>
@@ -349,7 +353,7 @@ const toggleFullScreen = () => {
 <h4 class="table-title"> Time Series </h4>
 <p> The <strong>Time Series</strong>  displays data points at successive intervals, making it ideal for visualizing trends over time, such as sales performance or website traffic. Its functionality includes adjustable time ranges and the ability to zoom in on specific periods, allowing users to identify patterns and anomalies in the data more effectively. </p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+
 <div class="image-container">
   <img src="/assets/plasma-time-series.png" class="styled-image" alt="Descriptive text" style="max-height: 450px; width: auto; object-fit: contain;">
 </div>

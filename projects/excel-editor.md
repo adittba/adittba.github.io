@@ -6,6 +6,7 @@
 </div>
 
 
+
 ## Use Case
 <div class="section">
 <p>Marketing companies often receive lead files that need to be formatted differently depending on the purpose. For example, a lead file used for cold calling might only need the contact’s name, phone number, and company, while a file for email marketing might require the email address, name, and past interactions. With this tool:</p>
@@ -16,8 +17,9 @@
 </ul>
 </div>
 
-<!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container">

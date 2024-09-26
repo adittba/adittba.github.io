@@ -177,7 +177,9 @@ Scroll to see the brand book.
 <h3> Brand Book Video </h3>
 <p class="brand-description"> In case scrolling through all the pages of the brand book gets boring, you can watch this short video. It highlights the exciting look of the new Journey Genie app, using slides from the brand book. The video serves as a preview, giving viewers a glimpse of the app's design, from the modern logo to the easy-to-use interface.</p>
 
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/video-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/video-style.css');
+</style>
 
 <div class="video-wrapper">
 <video controls>
