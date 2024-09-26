@@ -259,11 +259,13 @@ The Plasma Dashboard is a data-visualization tool, built with Python, that allow
 <script setup>
 import { ref, computed } from 'vue';
 
-const images = [
-  '/assets/plasma-donut-chart.png',
-  '/assets/plasma-pie-charts.png',
-  // Add more images here
-];
+// Import images correctly
+import galleryImage1 from '/assets/plasma-donut-chart.png';
+import galleryImage2 from '/assets/plasma-pie-charts.png';
+// Add more image imports as needed
+
+// Create an array of images
+const images = [galleryImage1, galleryImage2 /* add more images here */];
 
 const currentIndex = ref(0);
 const carouselImage = ref(images[currentIndex.value]);
@@ -293,16 +295,9 @@ const displayedThumbnails = computed(() => {
   ];
 });
 
-
-
+// Function to update the carousel image based on the current index
 const updateCarousel = () => {
   carouselImage.value = images[currentIndex.value];
-};
-
-// Function to set index from thumbnail click
-const setIndexFromThumbnail = (index) => {
-  currentIndex.value = index;
-  updateCarousel();
 };
 
 // Adjust the changeImage function to correctly update the currentIndex
@@ -316,6 +311,7 @@ const toggleFullScreen = () => {
   isFullScreen.value = !isFullScreen.value;
 };
 </script>
+
 
 
 <h4 class="table-title"> Scatter Plot </h4>
