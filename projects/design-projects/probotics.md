@@ -318,7 +318,7 @@ I also worked with Remco, the CEO of Probotics. He’s a successful entrepreneur
     border: 1px solid #a9a9a9b6;
     border-radius: 30px;
     box-shadow: 0 0 0px rgba(255, 255, 255, 0);
-    width: 50%; /* Adjust the width to match the aspect ratio */
+    width: 100%; /* Adjust the width to match the aspect ratio */
     max-width: 300px; /* Set a maximum width suitable for vertical videos */
     margin: auto;
     background-color: #f1f1f100;
@@ -339,7 +339,7 @@ I also worked with Remco, the CEO of Probotics. He’s a successful entrepreneur
 
   @media (max-width: 480px) {
     .styled-video-plasma {
-      height: 320px; /* Further reduced height for smaller mobile screens */
+      height: 500px; /* Further reduced height for smaller mobile screens */
     }
   }
 </style>

@@ -164,13 +164,13 @@ Scroll to see the client journey!
 
   @media (max-width: 768px) {
     .vertical-pdf-frame {
-      height: calc(100vw * 1.7778); /* Maintain the 9:16 aspect ratio on tablets */
+      height: 550px; /* Maintain the 9:16 aspect ratio on tablets */
     }
   }
 
   @media (max-width: 480px) {
     .vertical-pdf-frame {
-      height: calc(100vw * 1.7778); /* Maintain the 9:16 aspect ratio on smaller screens */
+      height: 550px; /* Maintain the 9:16 aspect ratio on smaller screens */
     }
   }
 </style>

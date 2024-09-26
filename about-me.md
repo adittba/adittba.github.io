@@ -2,22 +2,42 @@
 
 ---
 <!-- HTML Structure -->
-<div>
+<!-- HTML Structure -->
+<div class="image-container">
   <img src="/assets/profile-photo.jpg" alt="Profile Image" class="circle-image">
 </div>
 
 <style>
+  .image-container {
+    display: flex;                /* Use Flexbox for centering */
+    justify-content: left;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+  }
+
   .circle-image {
-    width: 240px;            /* Reduce size to accommodate padding */
-    height: 240px;           /* Same as width to maintain circular shape */
-    border-radius: 50%;      /* Makes the image a circle */
-    object-fit: cover;       /* Ensures the image covers the entire area without distortion */
-    padding: 5px;            /* Adds space between the image and the border */
-    border: 1px solid #919191;  /* Border with the desired color */
-    background-color: transparent; /* Optional: Adds a background color to show the gap */
-    transform: scale(0.9);   /* Optional: Zoom the image within the frame */
+    width: 240px;                 /* Set the size of the image */
+    height: 240px;                /* Same as width to keep it circular */
+    border-radius: 50%;           /* Makes the image a circle */
+    object-fit: cover;            /* Ensures the image covers the entire area without distortion */
+    padding: 5px;                 /* Adds space between the image and the border */
+    border: 1px solid #919191;    /* Border with the desired color */
+    background-color: transparent;/* Optional: Adds a background color to show the gap */
+    transform: scale(0.9);        /* Optional: Zoom the image within the frame */
+  }
+
+  /* Centering adjustments specifically for smaller screens */
+  @media (max-width: 768px) {
+    .image-container {
+      height: auto;               /* Adjust height to fit content on mobile */
+      justify-content: center;    /* Center horizontally */
+      align-items: center;        /* Center vertically */
+      display: flex;              /* Use Flexbox to center the content */
+      padding: 20px;              /* Optional padding for spacing on mobile */
+    }
   }
 </style>
+
+
 
 
 
