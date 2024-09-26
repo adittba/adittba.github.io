@@ -65,7 +65,9 @@ Scroll to see the brand book.
 <p class="key-findings-description">1. During our market analysis period we had numerous interesting key findings, one of them being that adventure tourism is one of the fastest-growing segments in the travel industry. Valued at approximately $282 billion in 2021, the adventure tourism market is projected to grow at a compound annual growth rate (CAGR) of 15.2% from 2022 to 2030, potentially reaching $1,169 billion by 2030. This forecast is also represented in the chart below.</p>
 
 <!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container" style="margin-top: 30px !important; max-width: 500px">
