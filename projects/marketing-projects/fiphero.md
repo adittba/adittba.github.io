@@ -245,11 +245,13 @@ FIPHero is a company that makes medicines for feline infectious peritonitis (FIP
 <script setup>
 import { ref, computed } from 'vue';
 
-const images = [
-  '/assets/fiphero1.png',
-  '/assets/fiphero2.png',
-  // Add more images here
-];
+// Import images correctly
+import image1 from '/assets/fiphero1.png';
+import image2 from '/assets/fiphero2.png';
+// Add more image imports here if needed
+
+// Create an array of imported images
+const images = [image1, image2];
 
 const currentIndex = ref(0);
 const carouselImage = ref(images[currentIndex.value]);
@@ -258,7 +260,6 @@ const isFullScreen = ref(false); // State to manage full-screen mode
 // Computed property to manage displayed thumbnails
 const displayedThumbnails = computed(() => {
   if (images.length === 2) {
-    // Logic to ensure thumbnails match the current picture when there are exactly 2 images
     return [
       { src: images[currentIndex.value], currentIndex: currentIndex.value }, // Current image
       {
@@ -268,7 +269,6 @@ const displayedThumbnails = computed(() => {
     ];
   }
 
-  // Normal case when more than 2 images are present
   const prevIndex = (currentIndex.value - 1 + images.length) % images.length;
   const nextIndex = (currentIndex.value + 1) % images.length;
 
@@ -278,8 +278,6 @@ const displayedThumbnails = computed(() => {
     { src: images[nextIndex], currentIndex: nextIndex },
   ];
 });
-
-
 
 const updateCarousel = () => {
   carouselImage.value = images[currentIndex.value];
@@ -302,6 +300,7 @@ const toggleFullScreen = () => {
   isFullScreen.value = !isFullScreen.value;
 };
 </script>
+
 
 
 ## My impact

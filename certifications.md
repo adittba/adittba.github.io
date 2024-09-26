@@ -259,14 +259,15 @@ I also hold several Google Skillshop certifications, like Google Ads, YouTube Ad
 <script setup>
 import { ref, computed } from 'vue';
 
-const images = [
-  '/assets/micro-credential0.png',
-  '/assets/micro-credential1.png',
-    '/assets/micro-credential3.png',
-  '/assets/micro-credential2.png',
+// Import images correctly
+import image1 from '/assets/micro-credential0.png';
+import image2 from '/assets/micro-credential1.png';
+import image3 from '/assets/micro-credential2.png';
+import image4 from '/assets/micro-credential3.png';
+// Add more image imports here if needed
 
-  // Add more images here
-];
+// Create an array of imported images
+const images = [image1, image2, image3, image4];
 
 const currentIndex = ref(0);
 const carouselImage = ref(images[currentIndex.value]);
@@ -275,7 +276,6 @@ const isFullScreen = ref(false); // State to manage full-screen mode
 // Computed property to manage displayed thumbnails
 const displayedThumbnails = computed(() => {
   if (images.length === 2) {
-    // Logic to ensure thumbnails match the current picture when there are exactly 2 images
     return [
       { src: images[currentIndex.value], currentIndex: currentIndex.value }, // Current image
       {
@@ -285,7 +285,6 @@ const displayedThumbnails = computed(() => {
     ];
   }
 
-  // Normal case when more than 2 images are present
   const prevIndex = (currentIndex.value - 1 + images.length) % images.length;
   const nextIndex = (currentIndex.value + 1) % images.length;
 
@@ -295,8 +294,6 @@ const displayedThumbnails = computed(() => {
     { src: images[nextIndex], currentIndex: nextIndex },
   ];
 });
-
-
 
 const updateCarousel = () => {
   carouselImage.value = images[currentIndex.value];
@@ -319,6 +316,7 @@ const toggleFullScreen = () => {
   isFullScreen.value = !isFullScreen.value;
 };
 </script>
+
 
 
 ## FreeCodeCamp

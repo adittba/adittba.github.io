@@ -225,19 +225,33 @@ I have a strong background in design, with experience across various projects. O
 <script setup>
 import { ref, computed } from 'vue';
 
+// Import images correctly
+import galleryImage1 from '/assets/probotics/probotics (1).png';
+import galleryImage2 from '/assets/probotics/probotics (2).png';
+import galleryImage3 from '/assets/probotics/probotics (3).png';
+import galleryImage4 from '/assets/probotics/probotics (4).png';
+import galleryImage5 from '/assets/probotics/probotics (5).png';
+import galleryImage6 from '/assets/probotics/probotics (6).png';
+import galleryImage7 from '/assets/probotics/probotics (7).png';
+import galleryImage8 from '/assets/probotics/probotics (8).png';
+import galleryImage9 from '/assets/probotics/probotics (9).png';
+import galleryImage10 from '/assets/probotics/probotics (10).png';
+import galleryImage11 from '/assets/probotics/probotics (11).png';
+
+// Create an array of imported images
 const images = [
-  '/assets/probotics/probotics (1).png',
-  '/assets/probotics/probotics (2).png',
-  '/assets/probotics/probotics (3).png',
-  '/assets/probotics/probotics (4).png',
-  '/assets/probotics/probotics (5).png',
-  '/assets/probotics/probotics (6).png',
-  '/assets/probotics/probotics (7).png',
-  '/assets/probotics/probotics (8).png',
-  '/assets/probotics/probotics (9).png',
-  '/assets/probotics/probotics (10).png',
-  '/assets/probotics/probotics (11).png',
-  // Add more images here
+  galleryImage1,
+  galleryImage2,
+  galleryImage3,
+  galleryImage4,
+  galleryImage5,
+  galleryImage6,
+  galleryImage7,
+  galleryImage8,
+  galleryImage9,
+  galleryImage10,
+  galleryImage11,
+  // Add more images here if needed
 ];
 
 const currentIndex = ref(0);
@@ -247,17 +261,15 @@ const isFullScreen = ref(false); // State to manage full-screen mode
 // Computed property to manage displayed thumbnails
 const displayedThumbnails = computed(() => {
   if (images.length === 2) {
-    // Logic to ensure thumbnails match the current picture when there are exactly 2 images
     return [
-      { src: images[currentIndex.value], currentIndex: currentIndex.value }, // Current image
+      { src: images[currentIndex.value], currentIndex: currentIndex.value },
       {
         src: images[(currentIndex.value + 1) % 2],
         currentIndex: (currentIndex.value + 1) % 2,
-      }, // The other image
+      },
     ];
   }
 
-  // Normal case when more than 2 images are present
   const prevIndex = (currentIndex.value - 1 + images.length) % images.length;
   const nextIndex = (currentIndex.value + 1) % images.length;
 
@@ -268,16 +280,8 @@ const displayedThumbnails = computed(() => {
   ];
 });
 
-
-
 const updateCarousel = () => {
   carouselImage.value = images[currentIndex.value];
-};
-
-// Function to set index from thumbnail click
-const setIndexFromThumbnail = (index) => {
-  currentIndex.value = index;
-  updateCarousel();
 };
 
 // Adjust the changeImage function to correctly update the currentIndex
@@ -291,6 +295,7 @@ const toggleFullScreen = () => {
   isFullScreen.value = !isFullScreen.value;
 };
 </script>
+
 
 ## Testimonial
 I also worked with Remco, the CEO of Probotics. He’s a successful entrepreneur from the Netherlands and also runs <strong>Provision</strong>, a company that films and streams football games for top teams like AC Milan. Here is a testimonial that he sent to me after our first month of working together: 
