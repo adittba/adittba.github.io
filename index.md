@@ -7,7 +7,7 @@ hero:
   text: "Portfolio"
   tagline: 'Creativity and Strategy'
   image:
-    src: '/public/assets/memoji.png'
+    src: '/assets/memoji.png'
   actions:
     - theme: alt
       text: About Me
