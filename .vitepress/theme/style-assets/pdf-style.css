@@ -1,0 +1,9 @@
+.pdf-wrapper iframe {
+    width: 100%;  /* Ensures the iframe is responsive */
+    height: 500px;  /* Sets a fixed height, adjust as necessary */
+    border: none;  /* Removes the default border */
+    border-radius: 15px;  /* Adds rounded corners */
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: adds a soft shadow for depth */
+    overflow: hidden;  /* Ensures the corners remain rounded */
+}
