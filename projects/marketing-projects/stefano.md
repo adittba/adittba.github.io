@@ -28,8 +28,9 @@ As the Marketing Manager for Stefano, a known travel influencer and former Emira
 
 Stefano is not just about travel; he also has a passion for finance and trading. After leaving his job, he started a second Instagram account to share valuable advice on finance, helping his followers understand money management better.
 
-<!-- Include the external CSS file in the head of your HTML if not already included -->
-<link rel="stylesheet" href="/.vitepress/theme/style-assets/image-style.css">
+<style scoped>
+@import url('/.vitepress/theme/style-assets/image-style.css');
+</style>
 
 <!-- Use HTML to create a container around the image -->
 <div class="image-container">

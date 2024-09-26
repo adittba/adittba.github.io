@@ -58,9 +58,9 @@ export default defineConfig({
             collapsible: true,
             collapsed: false,  // Start as not collapsed
             items: [
-              { text: 'FipHero', link: '/projects/marketing-projects/fiphero' },
               { text: 'TGV', link: '/projects/marketing-projects/tgv' },
-              { text: 'Stefano', link: '/projects/marketing-projects/stefano' }
+              { text: 'Stefano', link: '/projects/marketing-projects/stefano' },
+              { text: 'FipHero', link: '/projects/marketing-projects/fiphero' }
             ]
           }
         ]
