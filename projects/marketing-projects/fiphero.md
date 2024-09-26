@@ -97,7 +97,7 @@ FIPHero is a company that makes medicines for feline infectious peritonitis (FIP
   /* Arrows */
   .arrow {
     font-size: 20px; /* Smaller size */
-    color: #fff;
+    color: #8c8c8c;
     padding: 5px; /* Reduced padding */
     cursor: pointer;
     user-select: none;

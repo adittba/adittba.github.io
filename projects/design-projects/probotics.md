@@ -77,7 +77,7 @@ I have a strong background in design, with experience across various projects. O
   /* Arrows */
   .arrow {
     font-size: 20px; /* Smaller size */
-    color: #fff;
+    color: #8c8c8c;
     padding: 5px; /* Reduced padding */
     cursor: pointer;
     user-select: none;

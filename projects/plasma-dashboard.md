@@ -111,7 +111,7 @@ The Plasma Dashboard is a data-visualization tool, built with Python, that allow
   /* Arrows */
   .arrow {
     font-size: 20px; /* Smaller size */
-    color: #fff;
+    color: #8c8c8c;
     padding: 5px; /* Reduced padding */
     cursor: pointer;
     user-select: none;

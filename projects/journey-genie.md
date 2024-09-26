@@ -213,7 +213,7 @@ Scroll to see the brand book.
 
     @media (max-width: 480px) {
         .google-sheet-embed {
-            height: 600px; /* Further reduced height for smaller mobile screens */
+            height: 450px; /* Further reduced height for smaller mobile screens */
         }
     }
 </style>

@@ -111,7 +111,7 @@ I also hold several Google Skillshop certifications, like Google Ads, YouTube Ad
   /* Arrows */
   .arrow {
     font-size: 20px; /* Smaller size */
-    color: #fff;
+    color: #8c8c8c;
     padding: 5px; /* Reduced padding */
     cursor: pointer;
     user-select: none;
@@ -212,14 +212,14 @@ I also hold several Google Skillshop certifications, like Google Ads, YouTube Ad
     top: 30px;
     right: 30px;
     font-size: 36px;
-    color: #fff;
+    color: #8c8c8c;
     cursor: pointer;
     z-index: 1001;
   }
 
   .fullscreen-modal .arrow {
     font-size: 36px;
-    color: #fff;
+    color: #8c8c8c;
     padding: 10px;
     cursor: pointer;
     user-select: none;

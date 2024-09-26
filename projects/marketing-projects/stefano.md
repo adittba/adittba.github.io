@@ -113,7 +113,7 @@ In my role, I collaborated with his team to manage his Instagram account and lau
   /* Arrows */
   .arrow {
     font-size: 20px; /* Smaller size */
-    color: #fff;
+    color: #8c8c8c;
     padding: 5px; /* Reduced padding */
     cursor: pointer;
     user-select: none;
