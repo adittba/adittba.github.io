@@ -7,7 +7,7 @@ hero:
   text: "Portfolio"
   tagline: 'Strategy and Creativity'
   image:
-    src: 'https://adittba.github.io/assets/memoji.png' 
+    src: './assets/memoji.png' 
   actions:
     - theme: alt
       text: About Me
