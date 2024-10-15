@@ -12,8 +12,7 @@ export default defineConfig({
     logo: 'https://adittba.github.io/assets/logo.svg', // Path to the logo file in the public folder
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Portfolio', link: '/about-me' },
-      { text: 'Resume', link: '/resume' }
+      { text: 'Portfolio', link: '/about-me' }
     ],
     sidebar: [
       {
@@ -21,7 +20,6 @@ export default defineConfig({
         collapsible: false,
         items: [
           { text: 'About me', link: '/about-me', collapsible: false, collapsed: false },
-          { text: 'Resume', link: '/resume', collapsible: false, collapsed: false }
         ]
       },
       {
